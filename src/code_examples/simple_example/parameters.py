@@ -64,7 +64,7 @@
     'flat_field_order'    :     8,
     # Float Array: The seed for the random number generator (to ensure repeat
     # runs get the same answer!)
-    'seed'                :     [1.],
+    'seed'                :     [1],
     # Float: The stop condition for the self-calibration procedure and the
     # best-in-basis fitting (stop when difference is less than 2 times this)
     'stop_condition'	    :     1e-5,

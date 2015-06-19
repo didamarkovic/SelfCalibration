@@ -28,7 +28,7 @@ sys.path.append('./../..')
 # Multiprocessing Flag:
 # False - then does not use multiprocessing
 # int - uses that many separate processes
-multi_proc = 2
+multi_proc = False
 
 # Custom Modules
 import simulation
@@ -55,6 +55,8 @@ parameter_dictionaries = []
 for density in density_of_sources:
     dic['density_of_stars'] = density
     parameter_dictionaries.append(dic.copy())
+
+#print("Loaded {0} dictionaries, now running the simulations.".format(len(parameter_dictionaries)))
 
 if multi_proc:
     os.nice(19)

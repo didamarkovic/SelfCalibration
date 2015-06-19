@@ -850,7 +850,7 @@ if __name__ == "__main__":
 
     verbose = True
     mult_proc = True
-    plot_suffix = ".png"
+    plot_suffix = ".pdf"
     figure_width = 7.
 
     plt.rcParams['font.family'] = 'Computer Modern'

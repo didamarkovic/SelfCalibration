@@ -28,7 +28,7 @@ import simulation
 density_of_sources = np.logspace(0, 3, 30)[::-1]
 
 # Multiprocessing flat: int = number of threads, False = no multiprocessing
-multi_proc = 2
+multi_proc = False
 
 # Load the default parameters
 dic = eval(open('parameters.py').read())

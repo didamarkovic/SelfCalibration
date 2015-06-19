@@ -27,7 +27,7 @@ import analysis
 # Multiprocessing Flag:
 # False - then does not use multiprocessing
 # int - uses that many separate processes
-multi_proc = 4
+multi_proc = False
 
 # The four survey directories
 survey_files = ['A', 'B', 'C', 'D']

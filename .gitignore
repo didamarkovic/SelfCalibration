@@ -2,4 +2,8 @@
 *.aux
 *.log
 *.pyc
-pixel_level.pdf
+*.pdf
+*.png
+*.jpg
+*.txt
+*.p
