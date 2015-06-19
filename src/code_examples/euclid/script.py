@@ -7,6 +7,9 @@
 # Designing Large-Scale Imaging Surveys for a Retrospective
 # Relative Photometric Calibration, Rory Holmes, David W. Hogg, Hans-Walter Rix
 
+# Modified by Dida Markovic
+# 2015
+
 # The paper_plot.py script utilizes this data to produce the plots
 
 # Make Python 3 compatible
@@ -30,7 +33,7 @@ import analysis
 multi_proc = False
 
 # The four survey directories
-survey_files = ['A', 'B', 'C', 'D']
+survey_files = ['C', 'D', 'J', 'S']
 
 # Load the default parameters
 dic = eval(open('parameters.py').read())

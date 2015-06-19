@@ -25,7 +25,7 @@ old_figures += glob.glob('*.pdf')
 for path in old_figures:
     os.remove(path)
 
-dirs = ['A', 'B', 'C', 'D']
+dirs = ['J', 'S', 'C', 'D']
 plot_suffix = ".pdf"
 verbose = True
 
@@ -74,9 +74,9 @@ for indx in range(len(dirs)):
     ax[indx].set_xlim(min_sky, max_sky)
     ax[indx].set_ylim(min_sky, max_sky)
 
-ax[0].text(0.95, 0.04, 'A', va='center', ha='center',
+ax[0].text(0.95, 0.04, 'J', va='center', ha='center',
                                                     transform=ax[0].transAxes)
-ax[1].text(0.05, 0.04, 'B', va='center', ha='center',
+ax[1].text(0.05, 0.04, 'S', va='center', ha='center',
                                                     transform=ax[1].transAxes)
 ax[2].text(0.95, 0.96, 'C', va='center', ha='center',
                                                     transform=ax[2].transAxes)
