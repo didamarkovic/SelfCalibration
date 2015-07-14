@@ -133,9 +133,9 @@ if __name__ == "__main__":
     Euclid_FoV = [4*612. + 3*50., 4*612. + 3*100.] # arcsec
 
     J = np.array([[50.0, 100.0], [0.0, 100.0], [0.0, 100.0]])
-    xJ = generate_euclid_survey(sky_limits, FoV, pattern=J/Euclid_FoV, rand=randomise)
+    xJ = generate_euclid_survey(sky_limits, FoV, pattern=J/Euclid_FoV*FoV, rand=randomise)
     np.savetxt('J.txt', xJ)
 
     S = np.array([[50.0, 100.0], [0.0, 100.0], [50.0, 100.0]])
-    xS = generate_euclid_survey(sky_limits, FoV, pattern=S/Euclid_FoV, rand=randomise)
+    xS = generate_euclid_survey(sky_limits, FoV, pattern=S/Euclid_FoV*FoV, rand=randomise)
     np.savetxt('S.txt', xS)
